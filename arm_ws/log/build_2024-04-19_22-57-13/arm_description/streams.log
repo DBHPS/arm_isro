@@ -1,0 +1,30 @@
+[0.011s] Invoking command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description -- -j16 -l16
+[0.065s] Invoked command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description -- -j16 -l16
+[0.131s] Invoking command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description
+[0.138s] -- Install configuration: ""
+[0.138s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes
+[0.138s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/300link.STL
+[0.138s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/end_effector_mount.STL
+[0.138s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/base.STL
+[0.138s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/320link.STL
+[0.139s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/wrist.STL
+[0.139s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/Part3.STL
+[0.139s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/URDFCAD.STL
+[0.139s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/urdf
+[0.139s] -- Installing: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/urdf/arm.urdf.xacro
+[0.139s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description
+[0.139s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.sh
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/environment/path.sh
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/environment/path.dsv
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/local_setup.bash
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/local_setup.sh
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/local_setup.zsh
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/local_setup.dsv
+[0.140s] -- Installing: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/package.dsv
+[0.140s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/ament_index/resource_index/packages/arm_description
+[0.141s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake
+[0.141s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake
+[0.141s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/package.xml
+[0.141s] Invoked command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description

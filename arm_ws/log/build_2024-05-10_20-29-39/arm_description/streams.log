@@ -1,0 +1,52 @@
+[0.026s] Invoking command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description -- -j16 -l16
+[0.124s] Invoked command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description -- -j16 -l16
+[0.174s] Invoking command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description
+[0.186s] -- Install configuration: ""
+[0.187s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes
+[0.187s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/base.STL
+[0.187s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/solidworkszeroendeffectormount.STL
+[0.187s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/320link.STL
+[0.187s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/solidworkszerowrist.STL
+[0.187s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/finalendeffectormount.STL
+[0.187s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/solidworkszero300link.STL
+[0.188s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/newendeffectormount.STL
+[0.188s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/Part3.STL
+[0.188s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/meshes/URDFCAD1.STL
+[0.188s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/urdf
+[0.188s] -- Installing: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/urdf/arm.urdf.xacro
+[0.188s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/urdf/arm_gazebo.xacro
+[0.189s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/urdf/arm_ros2_control.xacro
+[0.189s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/launch
+[0.189s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/launch/display.launch.py
+[0.189s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/launch/gazebo.launch.py
+[0.189s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/rviz
+[0.189s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/rviz/display.rviz
+[0.189s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models
+[0.190s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/sun
+[0.190s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_3.sdf
+[0.190s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_4.sdf
+[0.190s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/sun/model.sdf
+[0.190s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/sun/model.config
+[0.191s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/sun/model-1_2.sdf
+[0.191s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/ground_plane
+[0.191s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_3.sdf
+[0.191s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_4.sdf
+[0.191s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model.sdf
+[0.192s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model.config
+[0.192s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/models/ground_plane/model-1_2.sdf
+[0.192s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description
+[0.192s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description
+[0.192s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.sh
+[0.192s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv
+[0.192s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/environment/path.sh
+[0.193s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/environment/path.dsv
+[0.193s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/local_setup.bash
+[0.193s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/local_setup.sh
+[0.193s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/local_setup.zsh
+[0.193s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/local_setup.dsv
+[0.193s] -- Installing: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/package.dsv
+[0.193s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/ament_index/resource_index/packages/arm_description
+[0.194s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake
+[0.194s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake
+[0.194s] -- Up-to-date: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_description/share/arm_description/package.xml
+[0.239s] Invoked command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hyperdimensional/Learning/arm_isro/arm_ws/build/arm_description

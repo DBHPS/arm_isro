@@ -1,0 +1,17 @@
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/config/arm_controllers.yaml
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/launch/controller.launch.py
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/ament_index/resource_index/package_run_dependencies/arm_controller
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/ament_index/resource_index/parent_prefix_path/arm_controller
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.sh
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/environment/ament_prefix_path.dsv
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/environment/path.sh
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/environment/path.dsv
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/local_setup.bash
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/local_setup.sh
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/local_setup.zsh
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/local_setup.dsv
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/package.dsv
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/ament_index/resource_index/packages/arm_controller
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig.cmake
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/cmake/arm_controllerConfig-version.cmake
+/home/hyperdimensional/Learning/arm_isro/arm_ws/install/arm_controller/share/arm_controller/package.xml

@@ -1,0 +1,353 @@
+<?xml version="1.0"?>
+
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm">
+
+
+    <xacro:include filename="$(find arm_description)/urdf/arm_gazebo.xacro"/>
+    <xacro:include filename="$(find arm_description)/urdf/arm_ros2_control.xacro"/>
+
+
+    <material name="grey">
+        <color rgba="0.2 0.2 0.2 1"/>
+    </material>
+
+    <material name="white">
+        <color rgba="1 1 1 1"/>
+    </material>
+
+    <material name="orange">
+        <color rgba="1 0.3 0.1 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+
+    
+
+
+
+
+<!-- put real values of weight, motor torque and velocity max ... also make the max and min angles to be +75 to -75  -->
+
+
+
+
+
+
+    <xacro:macro name="default_inertial" params="mass">
+        <inertial>
+            <mass value="${mass}"/>
+            <inertia    ixx="1.0" ixy="0.0" ixz="0.0"
+                        iyy="1.0" iyz="0.0"
+                        izz="1.0"/>
+            </inertial>
+    </xacro:macro>
+
+
+
+    <xacro:macro name="default_transmission" params="number">
+        <transmission name="transmission${number}">
+            <plugin>transmission_interface/SimpleTransmission</plugin>
+            <actuator name="motor${number}" role="actuator1"/>
+             <!-- are you sure role is written correctly ? -->
+            <joint name="joint${number}" role="joint1">
+                <mechanical_reduction>1.0</mechanical_reduction>
+            </joint>
+        </transmission>
+    </xacro:macro>
+
+    <link name="world"/>
+
+
+
+    <link name="base_link">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="1.57 0 0" xyz="0 0 0.075"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/URDFCAD1.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin rpy="1.57 0 0" xyz="0 0 0.075"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/URDFCAD1.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision> 
+
+    </link>
+
+    <joint name="virtual_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>        
+    </joint>
+
+
+
+    <link name="arm_rot_base">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="1.57 0 0" xyz="-0.365 0.23 -0.08"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/base.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+
+        <collision>
+            <origin rpy="1.57 0 0" xyz="-0.365 0.23 -0.08"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/base.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+
+    </link>
+
+    <joint name="joint0" type="fixed">
+        <parent link="base_link"/>
+        <child link="arm_rot_base"/>
+        <origin rpy="0 0 0" xyz="0.62867 -0.340 0.43"/>        
+    </joint>
+
+
+
+
+    <link name="arm_part_1">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="1.57 0 0.52" xyz="-0.43 0.015 -0.132"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/Part3.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin rpy="1.57 0 0.52" xyz="-0.43 0.015 -0.132"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/Part3.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>  
+
+    </link>
+
+    <joint name="joint1" type="revolute">
+        <parent link="arm_rot_base"/>
+        <child link="arm_part_1"/>
+        <axis xyz="0 0 1"/>
+        <origin rpy="0 0 0" xyz="0 0 0.055"/>
+        <limit lower="-1.57" upper="1.57" effort="100.0" velocity="10"/> 
+    </joint>
+
+
+    <link name="arm_part_2">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="1.72 0.27 0.55" xyz="-0.468 0.0085 -0.053"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/320link.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+
+        <collision>
+            <origin rpy="1.72 0.27 0.55" xyz="-0.468 0.0085 -0.053"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/320link.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>    
+
+    </link>
+
+    <joint name="joint2" type="revolute">
+        <parent link="arm_part_1"/>
+        <child link="arm_part_2"/>
+        <axis xyz="0 1 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0.061"/>
+        <limit lower="-1.57" upper="1.57" effort="100.0" velocity="10"/>    
+    </joint>
+
+
+
+    <link name="arm_part_3">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="1.57 0 0" xyz="-0.0254 0.0198 -0.025"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/solidworkszero300link.STL" scale="0.001 0.001 0.001" />            
+            </geometry>
+        </visual>
+        
+        <collision>
+            <origin rpy="1.57 0 0" xyz="-0.0254 0.0198 -0.025"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/solidworkszero300link.STL" scale="0.001 0.001 0.001" />            
+            </geometry>
+        </collision>  
+
+    </link>
+
+    <joint name="joint3" type="revolute">
+        <parent link="arm_part_2"/>
+        <child link="arm_part_3"/>
+        <axis xyz="0 1 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0.32"/>
+        <limit lower="-1.57" upper="1.57" effort="100.0" velocity="10"/>    
+    </joint>
+
+
+
+    <link name="arm_part_4">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="0 0 0" xyz="-0.025 -0.029 -0.07"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/solidworkszerowrist.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+        
+        <collision>
+            <origin rpy="0 0 0" xyz="-0.025 -0.029 -0.07"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/solidworkszerowrist.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision> 
+
+    </link>
+
+    <joint name="joint4" type="revolute">
+        <parent link="arm_part_3"/>
+        <child link="arm_part_4"/>
+        <axis xyz="0 1 0"/>
+        <origin rpy="0 0 0" xyz="0.3 0 0"/>    
+        <limit lower="-1.57" upper="1.57" effort="100.0" velocity="10"/>    
+    </joint>
+
+
+
+    <link name="arm_part_5">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="1.57 0 1.57" xyz="-0.035 -0.081 -0.065"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/correctendeffectorsupport.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        
+        <collision>
+            <origin rpy="1.57 0 1.57" xyz="-0.035 -0.081 -0.065"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/correctendeffectorsupport.STL" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision> 
+
+    </link>
+
+
+    <joint name="joint5" type="revolute">
+        <parent link="arm_part_4"/>
+        <child link="arm_part_5"/>
+        <axis xyz="0 0 1"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.1"/>    
+        <limit lower="-1.57" upper="1.57" effort="100.0" velocity="10"/>    
+    </joint>
+
+
+
+
+
+    <link name="gripper_right">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="0 -1.57 0" xyz="0.0175 0 -0.165"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/right_finger.STL" scale="0.003 0.003 0.003" />
+            </geometry>
+            <material name="white" />
+        </visual>
+        
+        <collision>
+            <origin rpy="0 -1.57 0" xyz="0.0175 0 -0.165"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/right_finger.STL" scale="0.003 0.003 0.003" />
+            </geometry>
+        </collision> 
+
+    </link>
+
+    <joint name="joint6" type="revolute">
+        <parent link="arm_part_5"/>
+        <child link="gripper_right"/>
+        <axis xyz="1 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.035"/>    
+        <limit lower="0" upper="1.57" effort="100.0" velocity="10"/>    
+    </joint>
+
+
+
+
+
+    <link name="gripper_left">
+
+        <xacro:default_inertial mass="1.0"/>
+
+        <visual>
+            <origin rpy="0 -1.57 0" xyz="0.0175 -0.035 -0.165"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/left_finger.STL" scale="0.003 0.003 0.003" />
+            </geometry>
+            <material name="white" />
+        </visual>
+        
+        <collision>
+            <origin rpy="0 -1.57 0" xyz="0.0175 -0.035 -0.165"/>
+            <geometry>
+                <mesh filename="package://arm_description/meshes/left_finger.STL" scale="0.003 0.003 0.003" />
+            </geometry>
+        </collision> 
+
+    </link>
+
+    <joint name="joint7" type="revolute">
+        <parent link="arm_part_5"/>
+        <child link="gripper_left"/>
+        <axis xyz="1 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 -0.035"/>
+        <mimic joint="joint6" multiplier="-1" />
+        <limit lower="0" upper="1.57" effort="100.0" velocity="10"/>    
+    </joint>
+
+
+
+
+    <xacro:default_transmission number="1"/>
+    <xacro:default_transmission number="2"/>
+    <xacro:default_transmission number="3"/>
+    <xacro:default_transmission number="4" />
+    <xacro:default_transmission number="5" />
+    <xacro:default_transmission number="6" />
+
+
+
+
+</robot>
