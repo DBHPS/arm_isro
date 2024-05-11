@@ -1,6 +1,6 @@
 controller_manager:
-  ros parameters:
-    update rate: 10
+  ros__parameters:
+    update_rate: 10
 
     arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
@@ -16,7 +16,7 @@ controller_manager:
 
 
 arm_controller:
-  ros_parameters:
+  ros__parameters:
     joints:
     - joint1
     - joint2
@@ -36,11 +36,12 @@ arm_controller:
 
 
 gripper_controller:
-  ros_parameters:
+  ros__parameters:
     joints:
     - joint6
 
     # interface_name: position
+    # the above line is used for ForwardCommandController
 
     command_interfaces:
       - position

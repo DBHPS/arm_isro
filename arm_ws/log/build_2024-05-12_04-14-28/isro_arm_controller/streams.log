@@ -1,0 +1,23 @@
+[0.015s] Invoking command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/isro_arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hyperdimensional/Learning/arm_isro/arm_ws/build/isro_arm_controller -- -j16 -l16
+[0.087s] Invoked command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/isro_arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/hyperdimensional/Learning/arm_isro/arm_ws/build/isro_arm_controller -- -j16 -l16
+[0.120s] Invoking command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/isro_arm_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hyperdimensional/Learning/arm_isro/arm_ws/build/isro_arm_controller
+[0.135s] -- Install configuration: ""
+[0.136s] -- Execute custom install script
+[0.137s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/config/isro_arm_controllers.yaml
+[0.137s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/launch/controller.launch.py
+[0.137s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/ament_index/resource_index/package_run_dependencies/isro_arm_controller
+[0.138s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/ament_index/resource_index/parent_prefix_path/isro_arm_controller
+[0.138s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/environment/ament_prefix_path.sh
+[0.139s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/environment/ament_prefix_path.dsv
+[0.139s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/environment/path.sh
+[0.139s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/environment/path.dsv
+[0.140s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/local_setup.bash
+[0.140s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/local_setup.sh
+[0.140s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/local_setup.zsh
+[0.141s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/local_setup.dsv
+[0.141s] -- Symlinking: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/package.dsv
+[0.162s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/ament_index/resource_index/packages/isro_arm_controller
+[0.162s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/cmake/isro_arm_controllerConfig.cmake
+[0.162s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/cmake/isro_arm_controllerConfig-version.cmake
+[0.163s] -- Up-to-date symlink: /home/hyperdimensional/Learning/arm_isro/arm_ws/install/isro_arm_controller/share/isro_arm_controller/package.xml
+[0.167s] Invoked command in '/home/hyperdimensional/Learning/arm_isro/arm_ws/build/isro_arm_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/hyperdimensional/Learning/arm_isro/arm_ws/build/isro_arm_controller
