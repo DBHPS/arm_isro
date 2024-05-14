@@ -18,4 +18,35 @@
 ##
         ros2 launch isro_arm_controller controller.launch.py
 
+### Launch file for moveit and arm trajectory control
+##
+        ros2 launch isro_arm_moveit moveit.launch.py
+
+
+
+
+
+required extra packages ?
+
+ros2 control install ?
+
+sudo apt-get install ros-humble-tf-transformations
+sudo pip3 install transforms3d
+
+
+
+
+
+
+
+
+
+
+sudo apt install ros-humble-rmw-cyclonedds-cpp
+
+in bashrc
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+
+
+sudo apt-get install ros-humble-moveit
 
